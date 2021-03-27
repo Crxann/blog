@@ -43,9 +43,15 @@ export default () => {
               onChange={toggleTheme}
             />
           </label>
-          <Nav.Link className="fj-navbar-item fj-navbar-link" href="/">
-            НҮҮР
-          </Nav.Link>
+
+          <Link href="/">
+            <a
+              className="fj-navbar-item fj-navbar-link"
+              style={{ color: theme.fontColor, marginTop: 5 }}
+            >
+              НҮҮР
+            </a>
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
