@@ -14,7 +14,12 @@ export default () => {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <Navbar className="fj-navbar fj-nav-base" bg="transparent" expand="lg">
+    <Navbar
+      variant={theme.type}
+      className="fj-navbar fj-nav-base"
+      bg="transparent"
+      expand="lg"
+    >
       <Navbar.Brand className="fj-navbar-brand">
         <Link href="/">
           <a style={{ color: theme.fontColor }}>1234 БЛОГ</a>
